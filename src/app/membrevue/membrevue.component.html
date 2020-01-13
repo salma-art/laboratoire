@@ -1,0 +1,99 @@
+<!--<div class="row">
+<div class="col-xl-4">
+    <div class="card bg-c-blue order-card">
+      <div class="card-block">
+        <h6 class="m-b-20">Nombre total de membres</h6>
+        <h2 class="text-right"><i class="fas fa-user-circle"></i><span>{{nbrMembre}}</span></h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <div class="card bg-c-green order-card">
+      <div class="card-block">
+        <h6 class="m-b-20">Nombre total d'enseignants chercheurs</h6>
+        <h2 class="text-right"><i class="fas fa-user-circle"></i><span>{{nbrEnseignant}}</span></h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <div class="card bg-c-yellow order-card">
+      <div class="card-block">
+        <h6 class="m-b-20">Nombre total d'etudiants</h6>
+        <h2 class="text-right"><i class="fas fa-user-circle"></i><span>{{nbrEtudiant}}</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12">
+    <app-card [cardClass]="'tab-card'" [cardOptionBlock]="true">
+      <div class="md-tabs">
+        <ngb-tabset>
+          <ngb-tab title="Tous les membres">
+            <ng-template ngbTabContent>
+              <div [@fadeInOutTranslate] class="m-t-15">
+                <div class="table-responsive">
+                  <table class="table">
+                    <tr>
+                      <th>ID</th>
+                      <th>CIN</th>
+                      <th>Nom et Prenom</th>
+                      <th>Date</th>
+                      <th>Email</th>
+                    </tr>
+                    <div *ngIf="membres">
+                        <hr>
+                        <ul>
+                          <li *ngFor="let membre of membres;">
+                              <tr>
+                                  <td>{{membre.id}}</td>
+                                  <td>{{membre.cin}}</td>
+                                  <td>{{membre.getNomPrenom()}}</td>
+                                  <td>{{membre.date}}</td>
+                                  <td>{{membre.email}}</td>
+                              </tr>
+                          </li>
+                        </ul>
+                      </div>
+                  </table>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="width: 400px; margin: auto;">
+    <h2>Angular 7 model showcase</h2>
+    <input type="number" [(ngModel)]="membreId" placeholder="ID Membre">
+    <button type="button" (click)="getUser()">Get member</button>
+  
+    <button type="button" (click)="getAllUsers()">Get all users</button>
+  
+    <div *ngIf="user">
+      User is called {{user.getFullName()}}. He has the following cars:
+      <ul>
+        <li *ngFor="let car of user.cars">
+          {{car.brand}} {{car.model}} with {{car.getHp()}} hp.
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="users">
+      <hr>
+  
+      <ul>
+        <li *ngFor="let user of users;">
+          {{user.getFullName()}} is {{user.position}} and has {{user.cars.length}} cars
+        </li>
+      </ul>
+    </div>
+  </div>-->
